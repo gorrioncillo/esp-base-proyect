@@ -14,5 +14,5 @@ ALl the documentation that will be used and the procedures to recreate this proy
 This because it will be easy to find information and then go deeper on some topic if you need.
 
 ## Links
-(platformio oficial documentation)[https://docs.platformio.org/en/latest/]
-(astyle)[http://astyle.sourceforge.net/]
+[platformio oficial documentation](https://docs.platformio.org/en/latest/)
+[astyle](http://astyle.sourceforge.net/)
