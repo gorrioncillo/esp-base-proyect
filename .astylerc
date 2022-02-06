@@ -1,0 +1,25 @@
+# AStyle file configuration
+# For more information check:
+#  http://astyle.sourceforge.net/astyle.html
+# Redirection
+#  The redirection option may be used to display the formatted file without updating:
+#    astyle --style=allman < OriginalSourceFile | less
+# To use:  astyle OriginalSourceFile --options=./.astylerc
+# Can be used on .ino files too
+# COMMENT dry-run TO ACTUALLY MODIFY THE FILES
+
+style=mozilla #braces are broken from classes, structs, enums, and function definitions. Braces are attached to everything else, including namespaces, arrays, and statements within a function.
+indent=spaces=2 #indentations are 2 spaces
+indent-switches # inside switch: cases will be indented
+indent-namespaces # namespaces block will be indented
+indent-after-parens #add an indent continuation lines that contain an openning paren
+indent-col1-comments # indent comments that start on col1
+pad-oper #this a=bar((b-c)*a,d--); into this a = bar((b - c) * a, d--);
+pad-first-paren-out #this if (isFoo((a+2), b)) into this if (isFoo ((a+2), b))
+delete-empty-lines #Delete empty lines within a function or method. Empty lines outside of functions or methods are NOT deleted
+#suffix=none #do not create .orig backup
+#dry-run #Perform a trial run with no changes made to the files. The report will be output as usual.
+#exclude=### #Specify a file or subdirectory #### to be excluded from processing.
+verbose
+formatted
+
