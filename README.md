@@ -16,3 +16,6 @@ This because it will be easy to find information and then go deeper on some topi
 ## Links
 [platformio oficial documentation](https://docs.platformio.org/en/latest/)  
 [astyle](http://astyle.sourceforge.net/)
+  We can use the hooks/pre-commit file to format the source code (.ino .hpp .cpp .h) files before the commit.  
+  For this you need the file .astyle on the root of the proyect and `sudo apt install astyle` on ubuntu o the exe on the path for windows.
+
