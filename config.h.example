@@ -1,0 +1,10 @@
+//Edit this file with your credentials
+//And copy as config.h on include/ directory
+//CAUTION do not upload config.h file to your cloud repository (github, gitlab, etc)
+#ifndef config_h
+#define config_h
+
+  String WifiSSID = "WIFI_SSID";
+  String WifiPASS = "WIFI_PASSWORD";
+
+#endif
