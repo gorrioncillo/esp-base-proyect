@@ -1,0 +1,14 @@
+#!/bin/sh
+
+FILES=`git diff --stat --cached --name-only`
+FILES=`echo $FILES | egrep -o '[a-zA-Z0-9\/-]*(\.ino|\.cpp|\.h|\.hpp)' | tr '\n' ' '`
+if [ -z "${FILES}" ]; then
+  echo "[astyle]: No source files (.cpp .ino .h .hpp) changed. Nothing to format"
+else
+  echo "[astyle]: files to format are:"
+  echo "$FILES"
+  echo "[astyle]: Running..."
+  astyle --options=./.astylerc ${FILES}
+  git add ${FILES}
+  echo "[astyle]: All formatted"
+fi
