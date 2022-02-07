@@ -17,7 +17,7 @@ indent-col1-comments # indent comments that start on col1
 pad-oper #this a=bar((b-c)*a,d--); into this a = bar((b - c) * a, d--);
 pad-first-paren-out #this if (isFoo((a+2), b)) into this if (isFoo ((a+2), b))
 delete-empty-lines #Delete empty lines within a function or method. Empty lines outside of functions or methods are NOT deleted
-#suffix=none #do not create .orig backup
+suffix=none #do not create .orig backup
 #dry-run #Perform a trial run with no changes made to the files. The report will be output as usual.
 #exclude=### #Specify a file or subdirectory #### to be excluded from processing.
 verbose
