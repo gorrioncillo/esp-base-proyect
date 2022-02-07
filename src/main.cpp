@@ -3,7 +3,7 @@
 void setup()
 {
 Serial.begin (115200);
-Serial.println ("Initial program");
+ Serial.println ("Initial program");
 }
 
 void loop()
