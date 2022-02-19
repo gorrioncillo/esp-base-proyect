@@ -7,4 +7,6 @@
   String WifiSSID = "WIFI_SSID";
   String WifiPASS = "WIFI_PASSWORD";
 
+  const char* mqtt_server = "broker.mqtt-dashboard.com"; //change this to config.h and own server ip/name
+  IPAddress server(172, 16, 0, 2); //we can use this as mqtt server too
 #endif
